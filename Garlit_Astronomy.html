@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Astronomy</title>
+    <link rel="stylesheet" href="HarryStyles.css">
+	
+</head>
+
+<body onload = "Greetings()">
+
+<header>
+
+   <center>
+   <h1> ASTRONOMY</h1>
+   
+</header>
+
+
+<nav>
+
+<a href="#First">Astronomy</a>
+<a href="#Second">Importance</a>
+<a href="#Third">History</a>
+
+</nav>
+			
+			<section id="First">
+			<div class = "PART1">
+			
+                <h1>
+                    WHAT IS IT?
+                </h1>
+                <p> 
+				   Astronomy is the scientific study of celestial objects and the universe. 
+				   It encompasses the observation, measurement, and analysis of stars, planets, galaxies, and other phenomena beyond Earth. 
+				   Astronomy has a wide scope, including astrophysics, planetary science, and cosmology.
+				</p>
+				
+			</div>
+			</section>
+			
+            <section id="Second">
+			<div class = "PART2">
+			
+                <h1>
+                    WHY IS IT IMPORTANT?
+                </h1>
+				<p>
+                    The importance of studying astronomy lies in its ability to expand our understanding of the cosmos. 
+					It reveals the fundamental principles that govern the universe and deepens our knowledge of our place within it. 
+					Astronomy also drives technological advancements, leading to innovations and spin-off technologies that benefit society. 
+					It contributes to addressing global challenges such as climate, space weather, and sustainable solutions. 
+                </p>
+				
+			</div>
+			</section>
+			
+			<section id="Third">
+			<div class = "PART3">
+			
+                <h1>HOW DID IT START?</h1>
+                <h3> <b>Ancient Astronomy</b> </h3>
+				<p>
+			       Our perceptions of the Solar System and space have evolved over time. 
+			       For thousands of years, people have looked to the heavens. 
+			       They studied the movement of the stars as well as the changes in the Sun and Moon. 
+			       Star maps were created using what was known about the positions of stars, eclipses, and Moon phases. 
+			       This data was used to create calendars and measure time. 
+			       It was extremely beneficial for determining when to plant crops or for navigating.
+			    </p>
+                <h3> <b>Contributions of Famous Astronomers</b> </h3>
+			
+				<div class="slider">
+					<div class="slides">
+					<input type="radio" name="radio-btn" id="radio1" checked="">
+					<input type="radio" name="radio-btn" id="radio2">
+					<input type="radio" name="radio-btn" id="radio3">
+					<input type="radio" name="radio-btn" id="radio4">
+					
+					<div class="slide first">
+					<img src="1.jpg" alt="">
+				    </div>
+					
+					<div class="slide">
+					<img src="2.jpg" alt="">
+					</div>
+					
+					<div class="slide">
+					<img src="3.jpg" alt="">
+					</div>
+					
+					<div class="slide">
+					<img src="4.jpg" alt="">
+					</div>
+					
+					<div class="navigation-auto">
+					<div class="auto-btn1"></div>
+					<div class="auto-btn2"></div>
+					<div class="auto-btn3"></div>
+					<div class="auto-btn4"></div>
+					</div>
+				</div>
+				
+				<div class="navigation-manual">
+				<label for="radio1" class="manual-btn"></label>
+				<label for="radio2" class="manual-btn"></label>
+				<label for="radio3" class="manual-btn"></label>
+				<label for="radio4" class="manual-btn"></label>
+				</div>
+				
+            </div>
+				
+            </div>
+			</section>
+
+<footer>
+<div class="footer">
+
+ <p>Copyright @ 2023 Caitlin Garlit <br> All Rights Reserved</p>
+ 
+</div>
+</footer>
+
+</body>
+
+<script>
+
+	function Greetings() {
+           
+            var message = "Hello user. Welcome to the world of astronomy!";
+            alert(message);
+			
+        }
+		
+	var counter = 1;
+	setInterval(function(){
+	document.getElementById('radio' + counter).checked = true;
+	counter++;
+	if(counter > 4) {
+		counter = 1;
+	}
+	}, 5000);
+
+</script>
+</html>
